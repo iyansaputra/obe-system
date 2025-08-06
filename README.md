@@ -31,10 +31,41 @@ This repository showcases the work I contributed during my internship at **PT. i
 
 ---
 
-##  Screenshots
+##  Documentation
 
-### Backend Preview  
-![Backend Screenshot](assets/backend_preview.png)
+### Backend Preview (Endpoint API)
+- Screen 1: authentication
+  POST /login
+  
+- Screen 2: home page
+  GET /user
+  GET /halaman-utama-nama
+  GET /halaman-utama-profile
+  
+- Screen 3: course
+  GET /matkul
+
+GET /matkul/{id_matkul}/{id_pengampu}
+
+- Screen 4: rps & evalution details
+  GET /detailrps/minggu/{id_matkul}
+  GET /evaluasi/{id_matkul}/{id_detailrps}/{id_evaluasi}
+  GET /subcpmk/{id_detailrps}
+  POST /evaluasi
+  PUT /evaluasi/{id_evaluasi
+  DELETE /evaluasi/{id_evaluasi}
+
+- Screen 5: student assessment
+  GET /mahasiswa-by-matkul/{id_matkul}
+  GET /evaluasi-mahasiswa-detail/{id_user}
+  POST /evaluasi-mahasiswa-detail/{id_user}/{id_matkul}
+  PUT /evaluasi-mahasiswa-detail/{id_user}/{id_matkul}/{id_evaluasimhs}
+  DELETE /evaluasi-mahasiswa-detail/{id_user}/{id_matkul}/{id_evaluasimhs}
+  POST /evaluasi_mahasiswa_hitung/{id_matkul}/{id_user}/{id_evaluasimhs}/{id_pengampu}
+
+- Screen 6: cpl
+  GET /matkul-cpl/{userId}
+  GET /total_cpl/{id_user}
 
 ### Android UI (OBE App)  
 ![Android UI](assets/android_ui.png)
@@ -42,10 +73,9 @@ This repository showcases the work I contributed during my internship at **PT. i
 ### Database ERD  
 ![Database ERD](assets/database_erd.png)
 
----
+### Workflow
+![Workflow](assets/workflow.png)
 
-##  Final Internship Report  
-[Download PDF Report](docs/Laporan%20Akhir%20Magang%20Mandiri_Ahmad%20Sofian%20Aris%20Saputra.pdf)
 
 ---
 
